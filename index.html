@@ -6,19 +6,43 @@
   <title>Emergency Service Directory</title>
    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 font-Hind Madurai>
+<body class="bg-gray-100 font-sans p-4 lg:p-8">
 
-   <nav class="flex justify-between items-center bg-white shadow px-6 py-3">
+   <div class="flex justify-between items-center bg-white shadow px-6 py-3">
     <div class="flex items-center gap-2">
       <img src="./assets/logo.png" class="w-8 h-8" alt="logo">
-      <span class="font-bold text-lg">Emergency Service</span>
+      <span class="font-bold text-lg">Emergency <br>Service</span>
     </div>
     <div class="flex items-center gap-6">
-      <div class="flex items-center gap-1"><img src="./assets/heart.png" alt=""> <span id="heartCount">0</span></div>
-      <div class="flex items-center gap-1"><img src="./assets/coin.png" alt=""> <span id="coinCount">100</span></div>
-      <div class="flex items-center gap-1">📋 <span id="copyCount">0</span></div>
+      <div class="flex items-center gap-1">
+        <img src="./assets/heart.png" class="w-[25] h-[22]"> <span id="heartCount">0</span>
+      </div>
+      <div class="flex items-center gap-1">
+        <img src="./assets/coin.png" alt=""><span id="coinCount">100</span>
+      </div>
+      <div class="flex items-center gap-1">
+          <button class="hidden sm:inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 transition text-white px-4 py-2 rounded-full">
+             <span>2 Copy</span>
+          </button>
+      </div>
     </div>
-  </nav>
+    </div>
+  
+
+   <header class="bg-green-800 text-center py-6 text-white">
+
+  <div class="flex flex-col items-center">
+  <img src="./assets/logo.png" 
+       alt="Bangladesh Govt Logo" 
+       class="h-12 w-12 mb-2" />
+  <h1 class="font-bold text-lg text-center">
+    Emergency Service Directory
+  </h1>
+</div>
+
+    <p class="text-sm">Government Emergency Services at Your Fingertip – A Project by Government of the People’s Republic of Bangladesh</p>
+  </header>
+
   
 </body>
 </html>
