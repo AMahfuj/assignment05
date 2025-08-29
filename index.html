@@ -6,23 +6,24 @@
   <title>Emergency Service Directory</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <script src="https://cdn.tailwindcss.com"></script>
+   
 </head>
 <body class="bg-gray-100 font-sans p-4 lg:p-8">
 
    <div class="flex justify-between items-center bg-white shadow px-6 py-3">
     <div class="flex items-center gap-2">
       <img src="./assets/logo.png" class="w-8 h-8" alt="logo">
-      <span class="font-bold text-lg">Emergency <br>Service</span>
+      <span class="font-bold text-lg text-[#006747]">Emergency <br>Service</span>
     </div>
     <div class="flex items-center gap-6">
       <div class="flex items-center gap-1">
-        <img src="./assets/heart.png" class="w-[25] h-[22]"> <span id="heartCount">0</span>
+        <img src="./assets/heart.png" class="w-12 h-12"> <span id="heartCount">0</span>
       </div>
       <div class="flex items-center gap-1">
-        <img src="./assets/coin.png" alt=""><span id="coinCount">100</span>
+        <img src="./assets/coin.png" alt="" class="w-12 h-12"><span id="coinCount">100</span>
       </div>
       <div class="flex items-center gap-1">
-          <button class="hidden sm:inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 transition text-white px-4 py-2 rounded-full">
+          <button class="hidden sm:inline-flex items-center gap-2 bg-green-600 hover:bg-green-600 transition text-white px-4 py-2 rounded-full">
              <span>2 Copy</span>
           </button>
       </div>
@@ -177,19 +178,34 @@
     </div>
 
     
-    <div class="bg-white rounded-lg shadow p-4">
-      <div class="flex justify-between items-center mb-3">
-        <h2 class="font-bold"> <span><img src="./assets/clock.png" alt=""></span> Call History</h2>
-        <button id="clearHistory" class="bg-green-500 text-white px-3 py-1 rounded text-sm">Clear</button>
-      </div>
-      <ul id="historyList" class="space-y-2 text-sm text-gray-700">
-        
-      </ul>
-    </div>
+    <div class="bg-white shadow-md rounded-xl p-4 mt-6">
+  <div class="flex items-center justify-between">
+    
+    <h2 class="text-lg font-bold flex items-center space-x-2">
+      <!-- Watch Icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" 
+           fill="none" viewBox="0 0 24 24" 
+           stroke="currentColor" class="w-5 h-5 text-gray-700">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+      <span>Call History</span>
+    </h2>
+
+    <!-- Right side: Clear Button -->
+    <button id="clearHistory" 
+      class="bg-green-600 hover:bg-green-600 text-white px-3 py-1 rounded-lg text-sm font-medium">
+      Clear
+    </button>
+  </div>
+
+  <!-- History List -->
+  <ul id="historyList" class="mt-3 space-y-2 text-sm text-gray-700"></ul>
+</div>
 
   </main>
 
 
-  
+  <script src="./script.js"></script>
 </body>
 </html>
