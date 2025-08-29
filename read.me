@@ -1,0 +1,35 @@
+(1)ANS- The differences are given below:
+1. getElementById("id") : Finds one element only, by its id and returns the single element with that specific id.
+
+2.getElementsByClassName("class") : Finds all elements that share the same class and returns an HTMLCollection that looks like an array but isn’t an array fully.
+
+3.querySelector("css-selector") : querySelector finds the first element that matches a CSS selector.Very flexible in use.
+
+4.querySelectorAll("css-selector") : querySelectorAll finds all elements that match the selector and Returns a NodeList.
+
+(2)ANS- At first we use document.createElement("tag") to build an element.Then we give it text, styles, attributes, or classes so it looks the way we want.Now we need to attach it to an existing element using methods like:
+
+appendChild() → adds at the end
+
+prepend() → adds at the beginning
+
+before() → adds before an element
+
+after() → adds after an element
+
+replaceWith() → replaces an element
+
+(3)ANS- Event bubbling is a concept in the Document Object Model (DOM) where an event, like a click, "bubbles up" from the element where it was triggered to its parent, and then its parent's parent, and all the way up to the document root.
+
+Work process:
+When an event occurs on an HTML element, the event first runs on that element. Then, the event handler is triggered on the parent element, and the process repeats for all ancestors up the DOM tree.
+
+(4)ANS- Event delegation is a powerful technique that helps you manage events efficiently, especially on lists or groups of similar elements. Instead of assigning an event listener to every individual element, you place a single listener on their common parent.
+It is useful for mainly two reasnos:
+1. Performance and Efficiency.
+2.Handling Dynamically Added Elements.
+
+(5)ANS- event.preventDefault() :
+This method is used to stop the default action of an event. Every browser has default behaviors for certain events, and preventDefault() is the way of overriding them.
+event.stopPropagation() :
+This method is used to stop an event from bubbling up the DOM tree. It prevents the event from being seen by any parent or ancestor elements.
